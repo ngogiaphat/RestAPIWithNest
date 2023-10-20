@@ -1,0 +1,97 @@
+# Version: 4.1.1 (Using https://semver.org/)
+# Updated: 2022-05-23
+# See https://github.com/RehanSaeed/EditorConfig/releases for release notes.
+# See https://github.com/RehanSaeed/EditorConfig for updates to this file.
+# See http://EditorConfig.org for more information about .editorconfig files.
+##########################################
+# Common Settings
+##########################################
+# This file is the top-most EditorConfig file
+root = true
+[*]
+indent_size = 2
+end_of_line = crlf
+indent_style = space
+insert_final_newline = false
+trim_trailing_whitespace = true
+# Matches the exact files either package.json or .travis.yml
+[*.{package.json, package-lock.json, .eslintrc.json, .eslintignore, .prettierrc.json, .prettierignore, firebase.json, babel.config.json, edgeware.json, .travis.yml, LICENSE, VERSION}]
+indent_size = 2
+end_of_line = crlf
+indent_style = space
+insert_final_newline = false
+trim_trailing_whitespace = true
+# JSON Files
+[*.{json, json5, jsonc, webmanifest}]
+indent_size = 2
+end_of_line = crlf
+indent_style = space
+trim_trailing_whitespace = true
+[*.{.js, *.ts, , *.jsx, *.tsx, *.java, *.vue, .*svelte}]
+charset = utf-8
+indent_size = 2
+end_of_line = crlf
+indent_style = space
+trim_trailing_whitespace = true
+[*.{.c, .cpp, .h, .hpp, .cs, .pas, .nim}]
+indent_size = 2
+end_of_line = crlf
+indent_style = space
+insert_final_newline = false
+trim_trailing_whitespace = true
+# Visual Studio XML Project Files
+[*.{csproj, vbproj, vcxproj.filters, proj, projitems, shproj}]
+indent_size = 2
+end_of_line = crlf
+indent_style = space
+insert_final_newline = false
+trim_trailing_whitespace = true
+# Visual Studio Solution Files
+[*.sln]
+indent_size = 2
+end_of_line = crlf
+indent_style = space
+insert_final_newline = false
+trim_trailing_whitespace = true
+# XML Configuration Files
+[*.{xml, config, props, targets, nuspec, resx, ruleset, vsixmanifest, vsct}]
+indent_size = 2
+end_of_line = crlf
+indent_style = space
+insert_final_newline = false
+trim_trailing_whitespace = true
+# YML, YAML Files
+[*.{yml, yaml}]
+indent_size = 2
+end_of_line = crlf
+indent_style = space
+insert_final_newline = false
+trim_trailing_whitespace = true
+# Markdown Files
+[*.{md, mdx}]
+indent_size = 2
+end_of_line = crlf
+indent_style = space
+insert_final_newline = false
+trim_trailing_whitespace = true
+# Batch Files
+[*.{cmd, bat}]
+indent_size = 2
+end_of_line = crlf
+indent_style = space
+insert_final_newline = false
+trim_trailing_whitespace = true
+# Bash Files
+[*.sh]
+indent_size = 2
+end_of_line = crlf
+indent_style = space
+insert_final_newline = false
+trim_trailing_whitespace = true
+# Makefiles
+[Makefile]
+indent_size = 2
+end_of_line = crlf
+indent_style = space
+insert_final_newline = false
+trim_trailing_whitespace = true
