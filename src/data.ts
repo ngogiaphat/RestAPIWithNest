@@ -1,5 +1,5 @@
 /**
- // Variable is numer 
+ // Variable is numer
 	let myName = 44
 	myName = 4789
 	// Variable is string
@@ -8,7 +8,7 @@
 */
 export enum ReportType {
 	REST = "rest",
-	INCOME = "income"
+	INCOME = "income",
 }
 export const data: Data = {
 	report: [
@@ -19,7 +19,7 @@ export const data: Data = {
 			created_at: new Date(),
 			updated_at: new Date(),
 			type: ReportType.INCOME,
-		}, 
+		},
 		{
 			id: "uuid2",
 			amount: 7500,
@@ -35,7 +35,7 @@ export const data: Data = {
 			created_at: new Date(),
 			updated_at: new Date(),
 			type: ReportType.REST,
-		}
+		},
 	],
 };
 interface Data {
