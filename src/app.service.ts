@@ -26,9 +26,7 @@ export class AppService {
 		return newReport;
 	}
 	updateReport(type: ReportType, id: string, body: Report) {
-		const reportToupdate = data.report
-			.filter((report) => report.type === type)
-			.find((report) => report.id === id);
+		const reportToupdate = data.report.filter((report) => report.type === type).find((report) => report.id === id);
 		if (!reportToupdate) return;
 		const reportIndex = data.report.findIndex((report) => report.id === reportToupdate.id);
 		data.report[reportIndex] = {
@@ -37,8 +35,7 @@ export class AppService {
 			updated_at: new Date(),
 		};
 		return data.report[reportIndex];
-	}
-	deleteReport(id: string){
+	}	deleteReport(id: string){
 		const reportIndex = data.report.findIndex((report) => report.id === id);
 		if(reportIndex === -1){
       return;

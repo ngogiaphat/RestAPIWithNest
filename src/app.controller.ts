@@ -1,30 +1,12 @@
 import {v4 as uuid} from "uuid";
 import {ReportType} from "src/data";
 import {AppService} from "./app.service";
-import {
-	Get,
-	Put,
-	Post,
-	Delete,
-	Controller,
-	Param,
-	Body,
-	HttpCode,
-	ParseIntPipe,
-} from "@nestjs/common";
+import {Get, Put, Post, Delete, Controller, Param, Body, HttpCode, ParseIntPipe} from "@nestjs/common";
 @Controller("report/:type")
 export class AppController {
   getHello(): any {
     throw new Error("Method not implemented.");
   }
-	// @Get()
-	// getAllIncomeReports(){
-	// 	return [];
-	// };
-	// @Get(':id')
-	// getIncomeReportById(){
-	// 	return {};
-	// };
 	constructor(private readonly appService: AppService){}
 	@Get()
 	getAllReports(@Param("type") type: string){
@@ -39,16 +21,12 @@ export class AppController {
 	}
 	@Post()
 	createReport(
-		@Body()
-		{
-			amount,
-			source,
-		}: {
+		@Body(){amount, source}: {
 			amount: number;
 			source: string;
 		},
 		@Param("type") type: string,
-	) {
+	){
 		const reportType = type === "income" ? ReportType.INCOME : ReportType.REST;
 		return this.appService.createReport(reportType, {
       amount, source,
