@@ -5,10 +5,12 @@
   "printWidth": 100,
   "endOfLine": "crlf",
   "singleQuote": false,
+  "proseWrap": "never",
   "trailingComma": "all",
   "bracketSpacing": false,
   "jsxSingleQuote": false,
   "bracketSameLine": true,
+  "quoteProps": "as-needed",
   "jsxBracketSameLine": true,
   "vueIndentScriptAndStyle": true,
   "htmlWhitespaceSensitivity": "css"
